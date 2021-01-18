@@ -1,0 +1,17 @@
+CREATE TABLE `user` (
+ `user_id` int(30) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) NOT NULL,
+ `email` varchar(255) NOT NULL,
+ `password` varchar(255) NOT NULL,
+ `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ PRIMARY KEY (`user_id`),
+ UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+CREATE TABLE `department` (
+ `dep_id` int(30) NOT NULL AUTO_INCREMENT,
+ `dep_name` varchar(255) NOT NULL,
+ `description` varchar(255) NOT NULL,
+ PRIMARY KEY (`dep_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=latin1

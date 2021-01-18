@@ -1,0 +1,7 @@
+INSERT INTO `department` ( `dep_id` , `dep_name` , `description` )
+VALUES ( 1, "English", "Offers literature oriented classes"),
+(2,"Maths","offers many courses from math1 to high levels"),
+(3,"history","offers courses about the history of different cultures"),
+(4,"Coumputer science","offers latest tech classes")
+
+

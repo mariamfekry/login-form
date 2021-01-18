@@ -1,0 +1,48 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>login page</title>
+<script>
+function validateForm() {
+  var x = document.forms["login"]["email"].value;
+  var y = document.forms["login"]["password"].value;
+ 
+  
+  if (x == "") {
+    alert("email must be filled out");
+    return false;
+  }
+  else if (y == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+
+}
+</script>
+</head>
+<body  class=body>
+
+<div class = "login-box">
+  <h2>Login Form</h2>
+<form name="login" onsubmit="return validateForm()" action="signin.php" method="post">
+<div  class=user-box>
+  <label for ="email"> Email:</label><br>
+<input type="text" placeholder="Enter email" id ="email" name="email"><br>
+</div>
+<div  class=user-box>
+<label for="password">Password:</label><br>
+<input type="password"  placeholder="Enter Password" id="password" name="password"><br>
+</div>
+<div>
+<input type="submit" value="submit"><tr>
+</div>
+<div  class=user-box>
+<a href="register.html">register</a>
+</div>
+</form>
+
+</div>
+
+</body>
+</html>
